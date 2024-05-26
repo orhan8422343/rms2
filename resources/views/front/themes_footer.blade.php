@@ -1,0 +1,16 @@
+@if ($activeTheme == 'multipurpose')
+    @includeIf('front.multipurpose.partials.footer')
+@elseif($activeTheme == 'bakery')
+    @includeIf('front.bakery.partials.footer')
+@elseif($activeTheme == 'pizza')
+    @includeIf('front.pizza.partials.footer')
+@elseif($activeTheme == 'coffee')
+    @includeIf('front.coffee.partials.footer')
+@elseif($activeTheme == 'medicine')
+    @includeIf('front.medicine.partials.footer')
+@elseif($activeTheme == 'grocery')
+    @includeIf('front.grocery.partials.footer')
+@elseif($activeTheme == 'beverage')
+    @includeIf('front.beverage.partials.footer')
+@endif
+

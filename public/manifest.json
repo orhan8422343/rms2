@@ -1,0 +1,25 @@
+{
+    "short_name": "Superv",
+    "name": "Superv",
+    "background_color": "#D3A971",
+    "theme_color": "#D3A971",
+    "start_url": ".\/",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/assets\/front\/img\/6242a02aa4714.png",
+            "type": "image\/png",
+            "sizes": "128X128"
+        },
+        {
+            "src": "/assets\/front\/img\/6242a02aa48c5.png",
+            "type": "image\/png",
+            "sizes": "256X256"
+        },
+        {
+            "src": "/assets\/front\/img\/6242a02aa4921.png",
+            "type": "image\/png",
+            "sizes": "512X512"
+        }
+    ]
+}

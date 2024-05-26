@@ -1,0 +1,140 @@
+/* -----------------------------------------
+	Footer CSS
+----------------------------------------- */
+
+.footer-area {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.footer-area :is(p, a, span) {
+  color: var(--text-light);
+  font-size: var(--font-sm);
+}
+.footer-area :is(h5) {
+  color: var(--text-white);
+}
+.footer-area .footer-widget {
+  margin-bottom: 30px;
+}
+.footer-area .footer-widget ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.footer-area .footer-widget .navbar-brand {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+}
+.footer-area .footer-widget h5 {
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.footer-area .footer-widget p {
+  margin-bottom: 25px;
+}
+.footer-area .info-list li {
+  -webkit-padding-start: 50px;
+          padding-inline-start: 50px;
+  min-height: 36px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-area .info-list li:not(:last-child) {
+  margin-bottom: 18px;
+}
+.footer-area .info-list i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  color: var(--text-white);
+  font-size: 16px;
+}
+.footer-area .info-list a {
+  display: block;
+}
+.footer-area .info-list li,
+.footer-area .footer-links li {
+  position: relative;
+  overflow: hidden;
+  font-size: var(--font-sm);
+}
+.footer-area .info-list li:not(:last-child),
+.footer-area .footer-links li:not(:last-child) {
+  margin-bottom: 14px;
+}
+.footer-area .info-list li a,
+.footer-area .footer-links li a {
+  display: block;
+}
+.footer-area .info-list li a:hover,
+.footer-area .footer-links li a:hover {
+  color: var(--color-primary);
+}
+.footer-area .footer-links a {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  transition: all 0.3s linear;
+}
+.footer-area .copy-right-area {
+  text-align: center;
+}
+.footer-area .border-top {
+  --border-color: rgba($color: var(--color-white-rgb), $alpha: .2);
+  border-top-style: dashed !important;
+}
+.footer-area .social-link {
+  --size: 35px;
+  gap: 15px;
+}
+.footer-area .social-link a {
+  color: var(--color-primary);
+  background-color: rgba(var(--color-primary-rgb), 0.2);
+  border-radius: 50%;
+}
+.footer-area .social-link a:hover {
+  background-color: var(--color-primary);
+  color: var(--text-white);
+}
+.footer-area .newsletter-form input {
+  background: transparent;
+  height: 50px;
+  color: var(--text-light);
+  border-color: rgba(var(--color-white-rgb), 0.2);
+}
+.footer-area .newsletter-form .btn {
+  top: 5px;
+  right: 0;
+  left: 0;
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: calc(100% - 10px);
+  line-height: calc(100% - 10px);
+  position: absolute;
+}
+
+.footer-2 :is(p, a, span) {
+  color: var(--text-medium);
+}
+.footer-2 :is(h5) {
+  color: var(--text-dark);
+}
+.footer-2 .newsletter-form input {
+  color: var(--text-dark);
+}

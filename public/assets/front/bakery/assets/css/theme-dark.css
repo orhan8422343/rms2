@@ -1,0 +1,221 @@
+:root {
+    --color-dark: #020101;
+    --color-dark-rgb: 17, 17, 17;
+    --color-medium: #3d3d3d;
+    --text-dark: #f2f2f2;
+    --text-medium: #ACACAC;
+    --text-white: var(--color-white);
+    --text-light: var(--color-light);
+    --border-color: #222222;
+    --border-color-2: #3d3d3d;
+    --bg-1: #1f1f1f;
+    --bg-2: #0f101d;
+    --bg-white: #111111;
+}
+
+* {
+    box-shadow: none;
+}
+
+.header-area.is-sticky {
+    background: rgba(var(--color-dark-rgb), 0.9);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-area .main-navbar .menu-dropdown {
+    border: 1px solid var(--border-color);
+}
+
+@media (max-width: 1199px) {
+    .header-area {
+        background: rgba(var(--color-dark-rgb), 0.9);
+        border-bottom: 1px solid var(--border-color);
+    }
+}
+
+.blog-area .card-content {
+    background-color: var(--bg-1);
+}
+
+.scroll-btn {
+    background-color: var(--bg-dark);
+}
+
+.scroll-btn.left::after {
+    background: linear-gradient(to right, var(--bg-dark) 20%, rgba(33, 33, 33, 0) 80%);
+}
+
+.scroll-btn.right::after {
+    background: linear-gradient(to left, var(--bg-dark) 20%, rgba(33, 33, 33, 0) 80%);
+}
+
+p.gateway-desc,
+.checkout-area .coupon {
+    background-color: var(--bg-2);
+}
+
+select option,
+.page-link,
+.dropdown-menu,
+.modal-content,
+.faq-section .card-body,
+.checkout-area .bottom,
+.job-lists .single-job,
+.blog-sidebar-widgets,
+.product-quantity button,
+.page-item.disabled .page-link,
+.cart-area .cart-table .cart-header tr,
+.faq-section .accordion .card .card-header,
+.checkout-area .table .cart-table .cart-header,
+.cart-area .cart-table tbody tr .qty .product-quantity button,
+.food-menu-area.food-menu-3-area .food-menu-items .single-menu-item,
+.food-menu-area.food-menu-3-area .tabs-btn .nav li a.active,
+#preloader,
+.request-loader {
+    background-color: var(--bg-1);
+}
+
+input,
+.form-control,
+.food-menu-area .button-group button,
+.dropdown-item:focus,
+.dropdown-item:hover,
+.checkout-area form .field-input textarea,
+.single-form input,
+.single-form textarea,
+.reservation-2-area.reservation-3-area.book-reservation .white-bg,
+.reservation-2-area .white-bg form .input-box input,
+.user-dashbord .user-profile-details .edit-info-area textarea.form_control,
+.menu-contents .menu-tabs .tab-content .tab-pane .shop-review-area .shop-review-form .input-box textarea {
+    background-color: transparent !important;
+}
+
+input,
+textarea,
+.user-dashbord .user-sidebar,
+.user-dashbord .title,
+.page-link,
+.single-form input,
+.single-form textarea,
+.form-control,
+.modal-header,
+.modal-footer,
+.menu-contents,
+.product-quantity,
+.shop-search input,
+.shop-sidebar .shop-box,
+.cart-total-table li,
+.cart-total-table,
+.cart-total .payment-options,
+.cart-area .cart-table tbody tr,
+.checkout-area .table .cart-table .cart-header,
+.shop-details-area .shop-content .shop-text,
+.pricing-area .single-pricing a.main-btn,
+.login-area .login-content .input-box input,
+.user-dashbord .user-sidebar .links li,
+.category-lists.job li,
+.job-lists .single-job,
+.checkout-area .table .cart-table tbody tr,
+.checkout-area form .field-input textarea,
+.food-menu-area.food-menu-3-area .tabs-btn .nav li a.active,
+.food-menu-area.food-menu-3-area .tabs-btn .nav li a,
+.cart-area .cart-table tbody tr .qty .product-quantity input,
+.cart-area .cart-table tbody tr .qty .product-quantity button,
+.user-dashbord .user-profile-details .edit-info-area .form_control,
+.user-dashbord .user-profile-details .edit-info-area textarea.form_control,
+.user-dashbord .account-info,
+.user-dashbord .order-details,
+.blog-details-area .blog-sidebar .blog-box .blog-title,
+.reservation-2-area .white-bg form .input-box input,
+.blog-details-area .blog-sidebar .blog-box,
+.blog-details-area .blog-sidebar .blog-box .blog-title .food-menu-area.food-menu-3-area .food-menu-items .single-menu-item,
+.checkout-area form .field-input input[type="text"],
+.checkout-area form .field-input select,
+.menu-contents .menu-tabs .tab-content .tab-pane .shop-review-area .shop-review-form .input-box textarea {
+    border-color: var(--border-color-2) !important;
+}
+
+input,
+textarea,
+select option,
+.form-control,
+.page-link,
+.close,
+.dropdown-item,
+.total-item-info li span,
+.single-job strong,
+.placeorder-button .main-btn,
+.page-item.disabled .page-link,
+.cart-total-table li:last-child,
+.checkout-area .shop-title-box h3,
+.cart-area .cart-table .cart-header,
+.checkout-area .table .cart-table thead tr th,
+.faq-section .accordion .card .card-header .btn,
+.login-area .login-content .login-title .title,
+.food-menu-area.food-menu-3-area .tabs-btn .nav li a.active,
+.user-dashbord .user-profile-details .edit-info-area .form_control,
+.menu-contents .menu-tabs .tab-content .tab-pane p,
+.blog-area .blog-content .blog-comments ul li,
+.blog-area .blog-content .blog-comments ul li i,
+.menu-contents .menu-tabs .tab-content .tab-pane span,
+.food-menu-area.food-menu-3-area .tabs-btn .nav li a p,
+.shop-details-area .shop-content .shop-social span,
+.shop-details-area .shop-content .shop-price ul li,
+.checkout-area form .field-input textarea,
+.popular-posts-lists h4,
+.category-lists h4,
+.info strong.label,
+.cart-table .title p strong,
+.product-quantity input,
+.contact-area .contact-info-list .item i,
+.blog-details-area .blog-details-items .blog-social .shop-social span,
+.checkout-area form .field-input input[type="text"],
+.checkout-area form .field-input select,
+.team-area .single-team .team-content .title,
+.blog-details-area .blog-sidebar .blog-box .blog-cat-list ul li a,
+.food-menu-area .food-menu-items .single-menu-item .menu-content a.title {
+    color: var(--text-white) !important;
+}
+
+input,
+.table,
+.total-item-info li,
+.price-range-box form input,
+.cart-table .price.cart_price strong,
+.user-dashbord .user-sidebar .links li a,
+.pricing-area .single-pricing a.main-btn,
+.cart-table .price.cart_price p,
+.cart-area .cart-table tbody tr td,
+.category-lists ul li a,
+.searchbar button[type="submit"],
+.searchbar input[type="submit"],
+.cart-area .cart-table tbody tr .qty .product-quantity button,
+.cart-area .cart-table tbody tr .qty .product-quantity input,
+.menu-contents .menu-tabs .tab-content .tab-pane .shop-review-area .shop-review-form .input-box span {
+    color: var(--text-light) !important;
+}
+
+p.gateway-desc,
+.checkout-area form .field-label,
+.dropdown-item:focus,
+.dropdown-item:hover,
+.pricing-area .single-pricing p,
+.cart-total .payment-options .option-block .checkbox label span,
+.food-menu-area.food-menu-2-area .food-menu-items .single-menu-item .menu-content p,
+.user-dashbord .main-table .dataTables_wrapper td a.btn {
+    color: var(--text-medium) !important;
+}
+
+.page-item.active .page-link,
+.page-link:hover {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+}
+
+.text-dark {
+    color: var(--text-white) !important;
+}
+
+.searchbar-form-section {
+    border: 1px solid var(--border-color-2);
+}

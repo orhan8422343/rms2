@@ -1,0 +1,17 @@
+/*   
+
+    * This file contains the styling for the Home Variation One, this
+    is the file you need to edit to change the look of the
+    template.
+
+******************************************************
+*****************************************************/
+/* -----------------------------------------
+	Hero Banner CSS
+----------------------------------------- */
+.hero-banner.hero-banner-1 {
+  padding-top: 210px;
+}
+.hero-banner.hero-banner-1 .bg-img {
+  background-position: center bottom;
+}

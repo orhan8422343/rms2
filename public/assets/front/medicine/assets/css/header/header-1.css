@@ -1,0 +1,25 @@
+/* -----------------------------------------
+	Header 2 CSS
+----------------------------------------- */
+.header-area.header-2:not(.is-sticky) :is(.nav-link:not(:is(.active, .menu-dropdown .nav-link)), .btn-icon, .btn-icon-text, .nice-select, .nice-select::after) {
+  color: var(--text-white);
+}
+.header-area.header-2:not(.is-sticky) .nice-select::after {
+  color: var(--text-white);
+}
+
+.header-area.header-2 :is(.btn-primary) {
+  background: var(--color-primary);
+}
+.header-area.header-2 .nice-select li {
+  color: var(--text-dark);
+}
+.header-area.header-2 .navbar-brand img:nth-child(2) {
+  display: none;
+}
+.header-area.header-2.is-sticky .navbar-brand img:nth-child(1) {
+  display: none;
+}
+.header-area.header-2.is-sticky .navbar-brand img:nth-child(2) {
+  display: block;
+}

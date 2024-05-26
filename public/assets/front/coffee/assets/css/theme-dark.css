@@ -1,0 +1,50 @@
+:root {
+  --color-dark: #020101;
+  --color-dark-rgb: 17, 17, 17;
+  --color-medium: #3d3d3d;
+  --text-dark: #f2f2f2;
+  --text-medium: #ACACAC;
+  --text-white: var(--color-white);
+  --text-light: var(--color-light);
+  --border-color: #222222;
+  --border-color-2: #3d3d3d;
+  --bg-1: #1f1f1f;
+  --bg-2: #0f101d;
+  --bg-white: #111111;
+}
+
+* {
+  box-shadow: none;
+}
+
+.header-area.is-sticky {
+  background: rgba(var(--color-dark-rgb), 0.9);
+  border-bottom: 1px solid var(--border-color);
+}
+.header-area .main-navbar .menu-dropdown {
+  border: 1px solid var(--border-color);
+}
+@media (max-width: 1199px) {
+  .header-area {
+    background: rgba(var(--color-dark-rgb), 0.9);
+    border-bottom: 1px solid var(--border-color);
+  }
+}
+
+.blog-area .card-content {
+  background-color: var(--bg-1);
+}
+
+.scroll-btn {
+  background-color: var(--bg-dark);
+}
+.scroll-btn.left::after {
+  background: linear-gradient(to right, var(--bg-dark) 20%, rgba(33, 33, 33, 0) 80%);
+}
+.scroll-btn.right::after {
+  background: linear-gradient(to left, var(--bg-dark) 20%, rgba(33, 33, 33, 0) 80%);
+}
+
+#preLoader {
+  background-color: var(--bg-1);
+}

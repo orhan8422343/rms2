@@ -1,0 +1,304 @@
+/* -----------------------------------------
+	Footer CSS
+----------------------------------------- */
+/* -----------------------------------------
+    Variables CSS
+----------------------------------------- */
+
+/* -----------------------------------------
+	Color CSS
+----------------------------------------- */
+/* Theme Color CSS */
+.theme-color-1 {
+  --color-primary: #C19F5F;
+  --color-primary-rgb: 193, 159, 95;
+  --btn-color: var(--color-dark);
+}
+
+.theme-color-2 {
+  --color-primary: #FAB940;
+  --color-primary-rgb: 250, 185, 64;
+  --btn-color: var(--color-dark);
+  --font-heading: "Josefin Sans", sans-serif;
+}
+
+.theme-color-3 {
+  --color-primary: #623620;
+  --color-primary-rgb: 69, 42, 28;
+  --font-heading: "Playfair Display", serif;
+}
+
+.theme-color-4 {
+  --color-primary: #499AFA;
+  --color-primary-rgb: 73, 154, 250;
+  --font-heading: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+.theme-color-5 {
+  --color-primary: #85C33C;
+  --color-primary-rgb: 133, 195, 60;
+  --font-heading: "Jost", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+.theme-color-6 {
+  --color-primary: #EE7712;
+  --color-primary-rgb: 238, 119, 18;
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Roboto", sans-serif;
+}
+
+/* Color CSS */
+.color-primary {
+  color: var(--color-primary) !important;
+}
+
+.color-white {
+  color: var(--text-white) !important;
+}
+
+.color-light {
+  color: var(--text-light) !important;
+}
+
+.color-dark {
+  color: var(--color-dark) !important;
+}
+
+.color-medium {
+  color: var(--text-medium) !important;
+}
+
+.color-blue {
+  color: var(--color-blue) !important;
+}
+
+.color-green {
+  color: var(--color-green) !important;
+}
+
+.color-red {
+  color: var(--color-red) !important;
+}
+
+.color-yellow {
+  color: var(--color-yellow) !important;
+}
+
+.color-purple {
+  color: var(--color-primary) !important;
+}
+
+.color-orange {
+  color: var(--color-orange) !important;
+}
+
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-primary-light {
+  --bg-primary-light: rgba(var(--color-primary-rgb), .05);
+  background-color: var(--bg-primary-light) !important;
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary) !important;
+}
+
+.bg-secondary-light {
+  --bg-secondary-light: rgba(var(--color-secondary-rgb), .05);
+  background-color: var(--bg-secondary-light) !important;
+}
+
+.bg-white {
+  background-color: var(--bg-white) !important;
+}
+
+.bg-light {
+  background-color: var(--bg-1) !important;
+}
+
+.bg-light-2 {
+  background-color: var(--bg-2) !important;
+}
+
+.bg-dark {
+  background-color: var(--color-dark) !important;
+}
+
+.bg-gradient {
+  background-image: var(--gradient-1) !important;
+}
+
+.border-primary {
+  border-color: var(--color-primary) !important;
+}
+
+.text-gradient {
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-none {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+.fill-primary {
+  fill: var(--color-primary) !important;
+}
+
+.stroke-primary {
+  stroke: var(--color-primary) !important;
+}
+
+.fill-primary-light {
+  fill: var(--color-primary) !important;
+  filter: contrast(30%);
+}
+
+.fill-dark {
+  fill: var(--color-primary) !important;
+  filter: brightness(50%);
+}
+
+.footer-area {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.footer-area :is(p, a, span) {
+  color: var(--text-light);
+  font-size: var(--font-sm);
+}
+.footer-area :is(h5) {
+  color: var(--text-white);
+}
+.footer-area .footer-widget {
+  margin-bottom: 30px;
+}
+.footer-area .footer-widget ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.footer-area .footer-widget .navbar-brand {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+}
+.footer-area .footer-widget h5 {
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.footer-area .footer-widget p {
+  margin-bottom: 25px;
+}
+.footer-area .info-list li {
+  -webkit-padding-start: 50px;
+          padding-inline-start: 50px;
+  min-height: 36px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-area .info-list li:not(:last-child) {
+  margin-bottom: 18px;
+}
+.footer-area .info-list i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  color: var(--text-white);
+  font-size: 16px;
+}
+.footer-area .info-list a {
+  display: block;
+}
+.footer-area .info-list li,
+.footer-area .footer-links li {
+  position: relative;
+  overflow: hidden;
+  font-size: var(--font-sm);
+}
+.footer-area .info-list li:not(:last-child),
+.footer-area .footer-links li:not(:last-child) {
+  margin-bottom: 14px;
+}
+.footer-area .info-list li a,
+.footer-area .footer-links li a {
+  display: block;
+}
+.footer-area .info-list li a:hover,
+.footer-area .footer-links li a:hover {
+  color: var(--color-primary);
+}
+.footer-area .footer-links a {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  transition: all 0.3s linear;
+}
+.footer-area .copy-right-area {
+  text-align: center;
+}
+.footer-area .border-top {
+  --border-color: rgba($color: var(--color-white-rgb), $alpha: .2);
+  border-top-style: dashed !important;
+}
+.footer-area .social-link {
+  --size: 35px;
+  gap: 15px;
+}
+.footer-area .social-link a {
+  color: var(--color-primary);
+  background-color: rgba(var(--color-primary-rgb), 0.2);
+  border-radius: 50%;
+}
+.footer-area .social-link a:hover {
+  background-color: var(--color-primary);
+  color: var(--text-white);
+}
+.footer-area .newsletter-form input {
+  background: transparent;
+  height: 50px;
+  color: var(--text-light);
+  border-color: rgba(var(--color-white-rgb), 0.2);
+}
+.footer-area .newsletter-form .btn {
+  top: 5px;
+  right: 0;
+  left: 0;
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: calc(100% - 10px);
+  line-height: calc(100% - 10px);
+  position: absolute;
+}
+
+.footer-2 :is(p, a, span) {
+  color: var(--text-medium);
+}
+.footer-2 :is(h5) {
+  color: var(--text-dark);
+}
+.footer-2 .newsletter-form input {
+  color: var(--text-dark);
+}

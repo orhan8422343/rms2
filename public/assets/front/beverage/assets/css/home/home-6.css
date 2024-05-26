@@ -1,0 +1,55 @@
+/*   
+
+    * This file contains the styling for the Home Variation Six, this
+    is the file you need to edit to change the look of the
+    template.
+
+******************************************************
+*****************************************************/
+/* -----------------------------------------
+	Hero Banner CSS
+----------------------------------------- */
+.hero-banner.hero-banner-6 {
+  padding-top: 160px;
+}
+.hero-banner.hero-banner-6 .bg-img {
+  background-position: center bottom;
+}
+.hero-banner.hero-banner-6 .bg-shape {
+  bottom: -1px;
+}
+.hero-banner.hero-banner-6 .product-price {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.hero-banner.hero-banner-6 .product-price h6 {
+  width: 100%;
+}
+.hero-banner.hero-banner-6 .product-price * {
+  margin: 0;
+}
+.hero-banner.hero-banner-6 .product-price .prev-price {
+  text-decoration: line-through;
+  font-weight: var(--font-semi-bold);
+}
+.hero-banner.hero-banner-6 .big-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  font-weight: 800;
+  font-size: 110px;
+  text-align: center;
+  line-height: 110px;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #363636;
+  -webkit-text-stroke-width: 1px;
+  z-index: -1;
+  opacity: 0.3;
+  pointer-events: none;
+}

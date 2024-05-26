@@ -1,0 +1,144 @@
+/*---------------------------
+** Variation Modal CSS
+---------------------------*/
+
+.variation-label strong,
+.addon-label strong {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: var(----color-primary);
+}
+
+#variationModal .form-check {
+    border-bottom: 1px dashed #0000002a !important;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+#variationModal .form-check {
+    margin-bottom: 0px;
+}
+
+#variationModal .form-check:last-child {
+    border-bottom: none;
+}
+
+#variationModal .form-check span {
+    opacity: .8;
+}
+
+#variationModal .modal-title small {
+    font-weight: 700;
+}
+
+#variationModal .modal-content {
+    border-radius: 0 !important;
+    padding: 13px 15px 19px !important;
+  
+}
+
+.modal-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.modal-quantity span {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.modal-quantity input {
+    border: none;
+    text-align: center;
+}
+
+.modal-quantity input.form-control:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.modal-quantity input::-webkit-outer-spin-button,
+.modal-quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.modal-quantity input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+button.modal-cart-link i.fa-spinner,
+.cart-link i.fa-spinner {
+    animation: spin 1.5s linear infinite;
+    -webkit-animation: spin 1.5s linear infinite;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: .6;
+}
+
+
+/*---------------------------
+** Request Loader CSS
+---------------------------*/
+
+.request-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0000007a !important;
+    z-index: 10000;
+    display: none;
+}
+
+.request-loader img {
+    position: fixed;
+    display: none;
+    width: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.request-loader.show {
+    display: block;
+}
+
+.request-loader.show img {
+    display: block;
+}
+h4#exampleModalLongTitle {
+    color: #000;
+}
+h5.text-capitalize {
+    color: #000;
+}
+.addon-label.mt-3 h5 {
+    color: #000;
+}
+
+

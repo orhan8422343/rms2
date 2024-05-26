@@ -1,0 +1,36 @@
+/*   
+    * This file contains the styling for the Home Variation Two, this
+    is the file you need to edit to change the look of the
+    template.
+
+******************************************************
+*****************************************************/
+/* -----------------------------------------
+	Hero Banner CSS
+----------------------------------------- */
+.hero-banner.hero-banner-2 {
+  padding-top: 250px;
+  padding-bottom: 300px;
+}
+.hero-banner.hero-banner-2 .product-price {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.hero-banner.hero-banner-2 .product-price h6 {
+  width: 100%;
+}
+.hero-banner.hero-banner-2 .product-price * {
+  margin: 0;
+}
+.hero-banner.hero-banner-2 .product-price .prev-price {
+  text-decoration: line-through;
+  font-weight: var(--font-semi-bold);
+}
+.hero-banner.hero-banner-2 .bg-img {
+  background-position: center bottom;
+}
+.hero-banner.hero-banner-2 .btn-outline {
+  background-color: var(--bg-white);
+}
