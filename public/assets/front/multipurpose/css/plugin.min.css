@@ -34,8 +34,8 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    font-family: "IBM Plex Sans Arabic" !important;
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
 }
 *,
 ::after,
@@ -43,7 +43,7 @@
     box-sizing: border-box;
 }
 html {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
@@ -62,7 +62,7 @@ section {
 }
 body {
     margin: 0;
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -173,7 +173,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-size: 1em;
 }
 pre {
@@ -222,7 +222,7 @@ optgroup,
 select,
 textarea {
     margin: 0;
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-size: inherit;
     line-height: inherit;
 }
@@ -5437,7 +5437,7 @@ a.close.disabled {
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -5545,7 +5545,7 @@ a.close.disabled {
     z-index: 1060;
     display: block;
     max-width: 276px;
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -8937,7 +8937,7 @@ button.bg-dark:hover {
     }
 }
 .text-monospace {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
 }
 .text-justify {
     text-align: justify !important;
@@ -9347,7 +9347,7 @@ button::-moz-focus-inner {
     color: #fff;
     font-style: normal;
     font-size: 28px;
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
 }
 .mfp-close:focus,
 .mfp-close:hover {
@@ -10413,7 +10413,7 @@ body .ui-tooltip {
     border-width: 2px;
 }
 .ui-widget {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-size: 1em;
 }
 .ui-widget .ui-widget {
@@ -10423,7 +10423,7 @@ body .ui-tooltip {
 .ui-widget input,
 .ui-widget select,
 .ui-widget textarea {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-size: 1em;
 }
 .ui-widget.ui-widget-content {
@@ -11197,7 +11197,7 @@ a.ui-button:active {
     overflow-x: hidden;
 }
 .ui-timepicker-standard {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-size: 1.1em;
     background-color: #fff;
     border: 1px solid #aaa;
@@ -11247,7 +11247,7 @@ a.ui-button:active {
     cursor: pointer;
     display: block;
     float: left;
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-size: 14px;
     font-weight: 400;
     height: 42px;
@@ -11875,7 +11875,7 @@ button::-moz-focus-inner {
     color: #fff;
     font-style: normal;
     font-size: 28px;
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
 }
 .mfp-close:hover,
 .mfp-close:focus {
@@ -20286,7 +20286,7 @@ button.toast-close-button {
     width: auto;
 }
 @font-face {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-style: normal;
     font-weight: 400;
     font-display: block;
@@ -20298,10 +20298,10 @@ button.toast-close-button {
         url(../fonts/fa-brands-400.svg#fontawesome) format("svg");
 }
 .fab {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
 }
 @font-face {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-style: normal;
     font-weight: 400;
     font-display: block;
@@ -20317,7 +20317,7 @@ button.toast-close-button {
     font-weight: 400;
 }
 @font-face {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-style: normal;
     font-weight: 900;
     font-display: block;
@@ -20331,7 +20331,7 @@ button.toast-close-button {
 .fa,
 .far,
 .fas {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
 }
 .fa,
 .fas {
@@ -21206,7 +21206,7 @@ button.toast-close-button {
     margin: 10px 0;
     width: 100%;
     max-width: 100%;
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-size: inherit;
     resize: none;
 }

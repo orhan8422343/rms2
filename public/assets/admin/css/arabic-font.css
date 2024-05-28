@@ -2,7 +2,7 @@
 
 body
 {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-weight: 100;
     font-style: normal;
 }

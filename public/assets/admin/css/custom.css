@@ -365,7 +365,7 @@ li.ui-menu-item {
 
 .variation-label strong,
 .addon-label strong {
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
     font-weight: 600;
     color: #000000;
 }
@@ -382,7 +382,7 @@ li.ui-menu-item {
     border-bottom: 1px dashed #0000002a;
     padding-bottom: 15px;
     padding-top: 15px;
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
 }
 
 #variationModal .form-check {

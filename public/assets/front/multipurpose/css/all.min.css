@@ -4561,7 +4561,7 @@
     width: auto;
 }
 @font-face {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-style: normal;
     font-weight: 400;
     font-display: block;
@@ -4573,10 +4573,10 @@
         url(../fonts/fa-brands-400.svg#fontawesome) format("svg");
 }
 .fab {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
 }
 @font-face {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-style: normal;
     font-weight: 400;
     font-display: block;
@@ -4592,7 +4592,7 @@
     font-weight: 400;
 }
 @font-face {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     font-style: normal;
     font-weight: 900;
     font-display: block;
@@ -4606,7 +4606,7 @@
 .fa,
 .far,
 .fas {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
 }
 .fa,
 .fas {

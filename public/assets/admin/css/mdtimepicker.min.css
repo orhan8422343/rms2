@@ -9,7 +9,7 @@ body[mdtimepicker-display="on"] {
     right: 0;
     left: 0;
     bottom: 0;
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
     font-size: 14px;
     background-color: rgba(10, 10, 10, 0.65);
     transition: background-color 0.28s ease;

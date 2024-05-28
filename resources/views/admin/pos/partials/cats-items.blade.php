@@ -26,7 +26,7 @@
                                 <div class="col-lg-4 px-2 mb-3">
                                     <a href="#" class="single-pos-item d-block cart-link" data-product="{{$product}}" data-href="{{route('admin.add.cart',$product->id)}}">
                                         <img class="lazy" src="{{asset('assets/admin/img/placeholde-150.png')}}" data-src="{{asset('assets/front/img/product/featured/' . $product->feature_image)}}" alt="" width="100%">
-                                        <h6 class="text-white mt-2 text-center">{{$product->title}}</h6>
+                                        <h6 class="text-black mt-2 text-center">{{$product->title}}</h6>
                                     </a>
                                 </div>
                                 @endforeach
@@ -43,7 +43,7 @@
     @foreach ($tables as $table)
 
     <div class="col-lg-2 mb-3">
-        <div class="table-item text-center" style="background-color: {{$table->is_busy == 1 ? 'red' : 'green'}};">
+        <div class="table-item text-center" style="background-color: {{$table->is_busy == 1 ? 'red' : 'green'}}; color: #fff; border-radius: 5px; margin-right: 2px;">
             <div class="table-number">
                 Table - {{$table->table_no}}
             </div>

@@ -108,7 +108,7 @@ p,
 td {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;
 }
 
 body {
@@ -4705,7 +4705,7 @@ label {
 .card-pricing2 .pricing-content li.disable:before,
 .card-pricing2 .pricing-content li:before {
     content: "\f00c";
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
     font-weight: 900;
     width: 20px;
     height: 20px;
@@ -5300,7 +5300,7 @@ label {
 
 .accordion .card>.card-header>.span-mode:before {
     content: "\f068" !important;
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
     font-weight: 900;
     font-size: 16px
 }
@@ -5604,7 +5604,7 @@ label {
     line-height: .8;
     color: #1572e8;
     transition: all .2s;
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
 }
 
 .form-check [type=checkbox]:not(:checked)+.form-check-sign:after {
@@ -5690,7 +5690,7 @@ label {
 .form-radio [type=radio]:checked+.form-radio-sign:before {
     content: "\f18a";
     font-size: 22px;
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
     position: absolute;
     right: 0;
     top: auto;
@@ -5710,7 +5710,7 @@ label {
     color: #4d7cfe;
     transition: all .2s;
     line-height: 1;
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
 }
 
 .form-radio [type=radio]:not(:checked)+.form-radio-sign:after {

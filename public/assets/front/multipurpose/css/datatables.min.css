@@ -609,7 +609,7 @@ table.dataTable.dtr-inline.collapsed
     box-sizing: content-box;
     text-align: center;
     text-indent: 0 !important;
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     line-height: 14px;
     content: "+";
     background-color: #31b131;
@@ -667,7 +667,7 @@ table.dataTable.dtr-column > tbody > tr > th.control:before {
     box-sizing: content-box;
     text-align: center;
     text-indent: 0 !important;
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
     line-height: 14px;
     content: "+";
     background-color: #31b131;

@@ -27,9 +27,9 @@
     @yield('style')
 
 </head>
-<body data-background-color="dark">
+<body data-background-color="light">
 	<div dir="rtl">
-        <div class="wrapper @yield('sidebar')">
+        <div class="wrapper @yield('sidebar')" >
 
             {{-- top navbar area start --}}
             @includeif('admin.partials.top-navbar')

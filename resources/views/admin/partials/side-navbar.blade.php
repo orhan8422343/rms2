@@ -7,7 +7,7 @@
     }
 @endphp
 
-<div class="sidebar sidebar-style-2" data-background-color="dark2">
+<div class="sidebar sidebar-style-2" data-background-color="light">
     <div class="sidebar-wrapper scrollbar scrollbar-inner">
         <div class="sidebar-content">
             <div class="user">

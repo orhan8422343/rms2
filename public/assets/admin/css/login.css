@@ -17,7 +17,7 @@
     border-radius: 8px;
 }
 .form input {
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
     outline: 0;
     background: #1a2035;
     color: #fff;
@@ -30,7 +30,7 @@
     font-size: 14px;
 }
 .form button {
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
     text-transform: uppercase;
     outline: 0;
     background: #4caf50;
@@ -102,7 +102,7 @@
 body {
     background: #76b852; /* fallback for old browsers */
     background: #1a2035;
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

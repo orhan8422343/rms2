@@ -6,8 +6,7 @@
 
 /* Layout helpers
 ----------------------------------*/
-
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Readex+Pro:wght@160..700&family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
 .ui-helper-hidden {
 	display: none;
 }
@@ -885,7 +884,7 @@ body .ui-tooltip {
 /* Component containers
 ----------------------------------*/
 .ui-widget {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
 	font-size: 1em;
 }
 .ui-widget .ui-widget {
@@ -895,7 +894,7 @@ body .ui-tooltip {
 .ui-widget select,
 .ui-widget textarea,
 .ui-widget button {
-    font-family: "IBM Plex Sans Arabic" !important;
+    font-family: "Noto Kufi Arabic", sans-serif !important;
 	font-size: 1em;
 }
 .ui-widget.ui-widget-content {

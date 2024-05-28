@@ -35,14 +35,14 @@
                         <form id="orderForm" action="{{route('admin.pos.placeOrder')}}" method="POST">
                             @csrf
                             <div class="form-group p-0 pb-2">
-                                <div class="ui-widget">
+                                <div class="ui-widget" style='font-family: "Noto Kufi Arabic", sans-serif !important;'>
                                     <label for="">رقم الزبون</label>
                                     <input class="form-control" type="text" name="customer_phone" placeholder="رقم الهاتف" value="{{old('customer_phone')}}" onchange="loadCustomerName(this.value)">
                                     {{-- <p class="text-warning mb-0">Use <strong>Country Code</strong> in phone number</p> --}}
                                 </div>
                             </div>
                             <div class="form-group p-0 pb-2">
-                                <div class="ui-widget">
+                                <div class="ui-widget" style='font-family: "Noto Kufi Arabic", sans-serif !important;'>
                                     <label for="">اسم الزبون</label>
                                     <input class="form-control" name="customer_name" type="text" placeholder="الاسم" value="{{old('customer_name')}}" disabled>
                                     <small class="text-warning">قم بإضافة رقم الهاتف أولًا</small>
@@ -58,7 +58,7 @@
                             </div>
                             <div class="form-group p-0 pb-2">
                                 <label for="">طريقة الدفع</label>
-                                <select class="form-control select2" name="payment_method">
+                                <select class="form-control select" name="payment_method">
                                     <option value="" selected disabled>اختيار طريقة الدفع</option>
                                     @foreach ($pmethods as $pmethod)
                                         <option value="{{$pmethod->name}}" {{$pmethod->name == old('payment_method') ? 'selected' : ''}}>{{$pmethod->name}}</option>
@@ -75,7 +75,7 @@
                             <div id="on_table" class="d-none extra-fields">
                                 <div class="form-group p-0 pb-2">
                                     <label for="">رقم الطاولة</label>
-                                    <select class="form-control select2" name="table_no">
+                                    <select class="form-control select" name="table_no">
                                         <option value="" selected disabled>اختيار رقم الطاولة</option>
                                         @foreach ($tables as $table)
                                             <option value="{{$table->table_no}}" {{$table->table_no == old('table_no') ? 'selected' : ''}}>Table - {{$table->table_no}}</option>
@@ -184,7 +184,7 @@
 
                         <div id="divRefresh">
                             @if (empty($cart))
-                            <div class="text-center py-5 bg-dark mt-4">
+                            <div class="text-center py-5 bg-light mt-4">
                                 <h4>لم يتم إضافة أي طلب</h4>
                             </div>
                             @else

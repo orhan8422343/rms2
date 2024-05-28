@@ -33,8 +33,8 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    font-family: "IBM Plex Sans Arabic" !important;
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
 }
 
 *,
@@ -44,7 +44,7 @@
 }
 
 html {
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -71,7 +71,7 @@ section {
 
 body {
     margin: 0;
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -207,7 +207,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
     font-size: 1em
 }
 
@@ -268,7 +268,7 @@ optgroup,
 select,
 textarea {
     margin: 0;
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
     font-size: inherit;
     line-height: inherit
 }
@@ -389,7 +389,7 @@ h4,
 h5,
 h6 {
     margin-bottom: .5rem;
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
     font-weight: 500;
     line-height: 1.2;
     color: inherit
@@ -5977,7 +5977,7 @@ button.close {
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -6102,7 +6102,7 @@ button.close {
     z-index: 1060;
     display: block;
     max-width: 276px;
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -9682,7 +9682,7 @@ button.bg-dark:hover {
 }
 
 .text-monospace {
-    font-family: "IBM Plex Sans Arabic" !important;
+   font-family: "Noto Kufi Arabic", sans-serif !important;;
 }
 
 .text-justify {

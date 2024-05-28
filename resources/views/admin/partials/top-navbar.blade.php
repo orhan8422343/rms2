@@ -1,6 +1,6 @@
 <div class="main-header">
     <!-- Logo Header -->
-    <div class="logo-header" data-background-color="dark2">
+    <div class="logo-header" data-background-color="light">
 
       <a href="{{route('front.index')}}" class="logo" target="_blank">
         <img src="{{asset('assets/front/img/'.$bs->logo)}}" alt="navbar brand" class="navbar-brand" width="120">
@@ -25,7 +25,7 @@
     <!-- End Logo Header -->
 
     <!-- Navbar Header -->
-    <nav class="navbar navbar-header navbar-expand-lg" data-background-color="dark">
+    <nav class="navbar navbar-header navbar-expand-lg" data-background-color="light">
 
       <div class="container-fluid">
 
