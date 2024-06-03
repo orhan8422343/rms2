@@ -20,6 +20,7 @@ class RoleController extends Controller
 
       $rules = [
         'name' => 'required|max:255',
+        
       ];
 
       $validator = Validator::make($request->all(), $rules);

@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="page-header">
-    <h4 class="page-title">Logo</h4>
+    <h4 class="page-title">الشعار</h4>
     <ul class="breadcrumbs">
       <li class="nav-home">
         <a href="{{route('admin.dashboard')}}">
@@ -13,13 +13,13 @@
         <i class="flaticon-right-arrow"></i>
       </li>
       <li class="nav-item">
-        <a href="#">Settings</a>
+        <a href="#">الإعدادات</a>
       </li>
       <li class="separator">
         <i class="flaticon-right-arrow"></i>
       </li>
       <li class="nav-item">
-        <a href="#">Logo</a>
+        <a href="#">الشعار</a>
       </li>
     </ul>
   </div>
@@ -27,7 +27,7 @@
     <div class="col-md-12">
       <div class="card">
         <div class="card-header">
-          <div class="card-title">Update Logo</div>
+          <div class="card-title">تحديث</div>
         </div>
         <div class="card-body pt-5 pb-4">
           <div class="row">
@@ -38,7 +38,7 @@
                   <div class="col-lg-12">
                     <div class="form-group">
                       <div class="col-12 mb-2">
-                        <label for="image"><strong> Logo **</strong></label>
+                        <label for="image"><strong>الشعار</strong></label>
                       </div>
                       <div class="col-md-12 showImage mb-3">
                         <img src="{{$bs->logo ? asset('assets/front/img/'.$bs->logo) :  asset('assets/admin/img/noimage.jpg')}}" alt="..." class="img-thumbnail">
@@ -53,7 +53,7 @@
                   <div class="form">
                     <div class="form-group from-show-notify row">
                       <div class="col-12 text-center">
-                        <button type="submit" class="btn btn-success">Update</button>
+                        <button type="submit" class="btn btn-success">تحديث</button>
                       </div>
                     </div>
                   </div>

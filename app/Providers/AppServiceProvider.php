@@ -45,9 +45,9 @@ class AppServiceProvider extends ServiceProvider
             $bs = $currentLang->basic_setting;
             $be = $currentLang->basic_extended;
             $activeTheme = $bs->theme;
-            
-           
-            
+
+
+
 
             $apopups = $currentLang->popups()->where('status', 1)->orderBy('serial_number', 'ASC')->get();
 

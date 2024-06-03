@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="page-header">
-    <h4 class="page-title">Preloader</h4>
+    <h4 class="page-title">أنيميشن</h4>
     <ul class="breadcrumbs">
       <li class="nav-home">
         <a href="{{route('admin.dashboard')}}">
@@ -13,13 +13,13 @@
         <i class="flaticon-right-arrow"></i>
       </li>
       <li class="nav-item">
-        <a href="#">Settings</a>
+        <a href="#">الإعدادات</a>
       </li>
       <li class="separator">
         <i class="flaticon-right-arrow"></i>
       </li>
       <li class="nav-item">
-        <a href="#">Preloader</a>
+        <a href="#">أنيميشن</a>
       </li>
     </ul>
   </div>
@@ -27,7 +27,7 @@
     <div class="col-md-12">
       <div class="card">
         <div class="card-header">
-          <div class="card-title">Update Preloader</div>
+          <div class="card-title">تحديث الأنيميشن</div>
         </div>
         <div class="card-body pt-5 pb-4">
           <div class="row">
@@ -37,21 +37,21 @@
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="form-group">
-                        <label>Status</label>
+                        <label>الحالة</label>
                         <div class="selectgroup w-100">
                            <label class="selectgroup-item">
                             <input type="radio" name="preloader_status" value="1" class="selectgroup-input" {{$bs->preloader_status == 1 ? 'checked' : ''}}>
-                            <span class="selectgroup-button">Active</span>
+                            <span class="selectgroup-button">مفعل</span>
                            </label>
                            <label class="selectgroup-item">
                             <input type="radio" name="preloader_status" value="0" class="selectgroup-input" {{$bs->preloader_status == 0 ? 'checked' : ''}}>
-                            <span class="selectgroup-button">Deactive</span>
+                            <span class="selectgroup-button">معطل</span>
                            </label>
                         </div>
                     </div>
                     <div class="form-group">
                       <div class="col-12 mb-2">
-                        <label for="image"><strong> Preloader **</strong></label>
+                        <label for="image"><strong>أنيميشن</strong></label>
                       </div>
                       <div class="col-md-12 showImage mb-3">
                         <img src="{{$bs->preloader ? asset('assets/front/img/'.$bs->preloader) :  asset('assets/admin/img/noimage.jpg')}}" alt="..." class="img-thumbnail">

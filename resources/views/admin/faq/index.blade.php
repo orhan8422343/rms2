@@ -22,7 +22,7 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
 
 @section('content')
   <div class="page-header">
-    <h4 class="page-title">Faqs</h4>
+    <h4 class="page-title">الأسئلة الشائعة</h4>
     <ul class="breadcrumbs">
       <li class="nav-home">
         <a href="{{route('admin.dashboard')}}">
@@ -33,13 +33,13 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
         <i class="flaticon-right-arrow"></i>
       </li>
       <li class="nav-item">
-        <a href="#">Website Pages</a>
+        <a href="#">تخصيص الموقع</a>
       </li>
       <li class="separator">
         <i class="flaticon-right-arrow"></i>
       </li>
       <li class="nav-item">
-        <a href="#">Faqs</a>
+        <a href="#">الأسئلة الشائعة</a>
       </li>
     </ul>
   </div>
@@ -50,20 +50,11 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="card-title d-inline-block">Faqs</div>
+                    <div class="card-title d-inline-block">الأسئلة الشائعة</div>
                 </div>
-                <div class="col-lg-3">
-                    @if (!empty($langs))
-                        <select name="language" class="form-control" onchange="window.location='{{url()->current() . '?language='}}'+this.value">
-                            <option value="" selected disabled>Select a Language</option>
-                            @foreach ($langs as $lang)
-                                <option value="{{$lang->code}}" {{$lang->code == request()->input('language') ? 'selected' : ''}}>{{$lang->name}}</option>
-                            @endforeach
-                        </select>
-                    @endif
-                </div>
+
                 <div class="col-lg-4 offset-lg-1 mt-2 mt-lg-0">
-                    <a href="#" class="btn btn-primary float-right btn-sm" data-toggle="modal" data-target="#createModal"><i class="fas fa-plus"></i> Add Faq</a>
+                    <a href="#" class="btn btn-primary float-right btn-sm" data-toggle="modal" data-target="#createModal"><i class="fas fa-plus"></i>إضافة سؤال</a>
                     <button class="btn btn-danger float-right btn-sm mr-2 d-none bulk-delete" data-href="{{route('admin.faq.bulk.delete')}}"><i class="flaticon-interface-5"></i> Delete</button>
                 </div>
             </div>
@@ -81,9 +72,9 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
                         <th scope="col">
                             <input type="checkbox" class="bulk-check" data-val="all">
                         </th>
-                        <th scope="col">Question</th>
-                        <th scope="col">Serial Number</th>
-                        <th scope="col">Actions</th>
+                        <th scope="col">السؤال</th>
+                        <th scope="col">رقم السؤال</th>
+                        <th scope="col">خيارات</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -99,7 +90,7 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
                               <span class="btn-label">
                                 <i class="fas fa-edit"></i>
                               </span>
-                              Edit
+                              تعديل
                             </a>
                             <form class="deleteform d-inline-block" action="{{route('admin.faq.delete')}}" method="post">
                               @csrf
@@ -108,7 +99,7 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
                                 <span class="btn-label">
                                   <i class="fas fa-trash"></i>
                                 </span>
-                                Delete
+                                حذف
                               </button>
                             </form>
                           </td>
@@ -127,11 +118,11 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
 
 
   <!-- Create Faq Modal -->
-  <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-background-color="light">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Add Faq</h5>
+          <h5 class="modal-title" id="exampleModalLongTitle">إضافة سؤال</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -139,7 +130,7 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
         <div class="modal-body">
           <form id="ajaxForm" class="modal-form create" action="{{route('admin.faq.store')}}" method="POST">
             @csrf
-            <div class="form-group">
+            {{-- <div class="form-group">
                 <label for="">Language **</label>
                 <select name="language_id" class="form-control">
                     <option value="" selected disabled>Select a language</option>
@@ -148,19 +139,19 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
                     @endforeach
                 </select>
                 <p id="errlanguage_id" class="mb-0 text-danger em"></p>
-            </div>
+            </div> --}}
             <div class="form-group">
-              <label for="">Question **</label>
+              <label for="">السؤال</label>
               <input type="text" class="form-control" name="question" value="" placeholder="Enter question">
               <p id="errquestion" class="mb-0 text-danger em"></p>
             </div>
             <div class="form-group">
-              <label for="">Answer **</label>
+              <label for="">الإجابة</label>
               <textarea class="form-control" name="answer" rows="5" cols="80" placeholder="Enter answer"></textarea>
               <p id="erranswer" class="mb-0 text-danger em"></p>
             </div>
             <div class="form-group">
-              <label for="">Serial Number **</label>
+              <label for="">رقم السؤال</label>
               <input type="number" class="form-control ltr" name="serial_number" value="" placeholder="Enter Serial Number">
               <p id="errserial_number" class="mb-0 text-danger em"></p>
               <p class="text-warning"><small>The higher the serial number is, the later the FAQ will be shown.</small></p>
@@ -168,8 +159,8 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button id="submitBtn" type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">خروج</button>
+          <button id="submitBtn" type="button" class="btn btn-primary">حفظ</button>
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="page-header">
-    <h4 class="page-title">Customers</h4>
+    <h4 class="page-title">الزبائن</h4>
     <ul class="breadcrumbs">
         <li class="nav-home">
             <a href="{{route('admin.dashboard')}}">
@@ -13,13 +13,13 @@
             <i class="flaticon-right-arrow"></i>
         </li>
         <li class="nav-item">
-            <a href="#">Customers</a>
+            <a href="#">الزبائن</a>
         </li>
         <li class="separator">
             <i class="flaticon-right-arrow"></i>
         </li>
         <li class="nav-item">
-            <a href="#">Customers</a>
+            <a href="#">إدارة الحسابات</a>
         </li>
     </ul>
 </div>
@@ -30,16 +30,16 @@
             <div class="card-header">
                 <div class="row">
                     <div class="col-lg-4">
-                        <div class="card-title d-inline-block">Customers</div>
+                        <div class="card-title d-inline-block">حسابات الزبائن</div>
                     </div>
                     <div class="col-lg-3">
                         <form action="{{url()->full()}}">
-                            <input type="text" class="form-control" name="term" placeholder="Search by Phone / Name" value="{{request()->input('term')}}">
+                            <input type="text" class="form-control" name="term" placeholder="البحث عبر الاسم أو رقم الهاتف" value="{{request()->input('term')}}">
                         </form>
                     </div>
                     <div class="col-lg-4 offset-lg-1 mt-2 mt-lg-0">
-                        <a href="#" class="btn btn-primary float-right btn-sm" data-toggle="modal" data-target="#createModal"><i class="fas fa-plus"></i> Add Customer</a>
-                        <button class="btn btn-danger float-right btn-sm mr-2 d-none bulk-delete" data-href="{{route('admin.customer.bulk.delete')}}"><i class="flaticon-interface-5"></i> Delete</button>
+                        <a href="#" class="btn btn-primary float-right btn-sm" data-toggle="modal" data-target="#createModal"><i class="fas fa-plus"></i>إضافة زبون</a>
+                        <button class="btn btn-danger float-right btn-sm mr-2 d-none bulk-delete" data-href="{{route('admin.customer.bulk.delete')}}"><i class="flaticon-interface-5"></i> حذف</button>
                     </div>
                 </div>
             </div>
@@ -56,10 +56,10 @@
                                         <th scope="col">
                                             <input type="checkbox" class="bulk-check" data-val="all">
                                         </th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Phone</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Actions</th>
+                                        <th scope="col">اسم الزبون</th>
+                                        <th scope="col">رقم الهاتف</th>
+                                        <th scope="col">الإيميل</th>
+                                        <th scope="col">خيارات</th>
                                     </tr>
                                 </thead>
                                 <tbody>

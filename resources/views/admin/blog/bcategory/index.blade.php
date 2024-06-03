@@ -22,7 +22,7 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
 
 @section('content')
   <div class="page-header">
-    <h4 class="page-title">Blog Categories</h4>
+    <h4 class="page-title">أقسام المدونة</h4>
     <ul class="breadcrumbs">
       <li class="nav-home">
         <a href="{{route('admin.dashboard')}}">
@@ -33,19 +33,19 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
         <i class="flaticon-right-arrow"></i>
       </li>
       <li class="nav-item">
-        <a href="#">Website Pages</a>
+        <a href="#">تخصيص الموقع</a>
       </li>
       <li class="separator">
         <i class="flaticon-right-arrow"></i>
       </li>
       <li class="nav-item">
-        <a href="#">Blogs</a>
+        <a href="#">المدونة</a>
       </li>
       <li class="separator">
         <i class="flaticon-right-arrow"></i>
       </li>
       <li class="nav-item">
-        <a href="#">Categories</a>
+        <a href="#">الأقسام</a>
       </li>
     </ul>
   </div>
@@ -56,20 +56,11 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
         <div class="card-header">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="card-title d-inline-block">Categories</div>
+                    <div class="card-title d-inline-block">الأقسام</div>
                 </div>
-                <div class="col-lg-3">
-                    @if (!empty($langs))
-                        <select name="language" class="form-control" onchange="window.location='{{url()->current() . '?language='}}'+this.value">
-                            <option value="" selected disabled>Select a Language</option>
-                            @foreach ($langs as $lang)
-                                <option value="{{$lang->code}}" {{$lang->code == request()->input('language') ? 'selected' : ''}}>{{$lang->name}}</option>
-                            @endforeach
-                        </select>
-                    @endif
-                </div>
+
                 <div class="col-lg-4 offset-lg-1 mt-2 mt-lg-0">
-                    <a href="#" class="btn btn-primary float-right btn-sm" data-toggle="modal" data-target="#createModal"><i class="fas fa-plus"></i> Add Blog Category</a>
+                    <a href="#" class="btn btn-primary float-right btn-sm" data-toggle="modal" data-target="#createModal"><i class="fas fa-plus"></i>إضافة قسم جديد</a>
                     <button class="btn btn-danger float-right btn-sm mr-2 d-none bulk-delete" data-href="{{route('admin.bcategory.bulk.delete')}}"><i class="flaticon-interface-5"></i> Delete</button>
                 </div>
             </div>
@@ -87,10 +78,10 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
                         <th scope="col">
                             <input type="checkbox" class="bulk-check" data-val="all">
                         </th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">Serial Number</th>
-                        <th scope="col">Actions</th>
+                        <th scope="col">اسم القسم</th>
+                        <th scope="col">الحالة</th>
+                        <th scope="col">رقم القسم</th>
+                        <th scope="col">خيارات</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -102,9 +93,9 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
                           <td>{{convertUtf8($bcategory->name)}}</td>
                           <td>
                             @if ($bcategory->status == 1)
-                              <h2 class="d-inline-block"><span class="badge badge-success">Active</span></h2>
+                              <h2 class="d-inline-block"><span class="badge badge-success">مفعل</span></h2>
                             @else
-                              <h2 class="d-inline-block"><span class="badge badge-danger">Deactive</span></h2>
+                              <h2 class="d-inline-block"><span class="badge badge-danger">معطل</span></h2>
                             @endif
                           </td>
                           <td>{{$bcategory->serial_number}}</td>
@@ -113,7 +104,7 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
                               <span class="btn-label">
                                 <i class="fas fa-edit"></i>
                               </span>
-                              Edit
+                              تعديل
                             </a>
                             <form class="deleteform d-inline-block" action="{{route('admin.bcategory.delete')}}" method="post">
                               @csrf
@@ -122,7 +113,7 @@ $selLang = \App\Models\Language::where('code', request()->input('language'))->fi
                                 <span class="btn-label">
                                   <i class="fas fa-trash"></i>
                                 </span>
-                                Delete
+                                حذف
                               </button>
                             </form>
                           </td>
